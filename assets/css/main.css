@@ -19,37 +19,37 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #101a20; /* Background color for the entire website, including individual sections */
-  --default-color: #e7f2f7; /* Default color used for the majority of the text content across the entire website */
+  --background-color: #181818; /* Background color for the entire website, including individual sections */
+  --default-color: #ededed; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1387c1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #141f26; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --accent-color: #cccccc; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #222222; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #181818; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1387c1; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #213642; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #051117; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #e7f2f7; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1387c1; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-hover-color: #cccccc; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #303030; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #111111; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #ededed; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #cccccc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #142027;
-  --surface-color: #325264;
+  --background-color: #202020;
+  --surface-color: #383838;
 }
 
 .dark-background {
-  --background-color: #0b1419;
+  --background-color: #111111;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
-  --contrast-color: #ffffff;
+  --contrast-color: #181818;
 }
 
 /* Smooth scroll */
@@ -91,7 +91,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #444444;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -102,7 +102,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #555555;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -205,7 +205,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(16, 26, 32, 0.9);
+  --background-color: rgba(24, 24, 24, 0.9);
 }
 
 /*--------------------------------------------------------------
@@ -434,12 +434,12 @@ h6 {
   }
 
   .navmenu .dropdown ul ul {
-    background-color: rgba(33, 37, 41, 0.1);
+    background-color: rgba(37, 37, 37, 0.1);
   }
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: rgba(37, 37, 37, 0.03);
   }
 
   .mobile-nav-active {
@@ -460,7 +460,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: rgba(37, 37, 37, 0.8);
     transition: 0.3s;
   }
 
@@ -1343,7 +1343,7 @@ section,
 }
 
 .testimonials .testimonial-item .stars i {
-  color: #ffc107;
+  color: #cccccc;
   margin: 0 1px;
 }
 
@@ -2705,7 +2705,7 @@ section,
 }
 
 .contact .info-box h3 {
-  color: var(--contrast-color);
+  color: var(--default-color);
   font-size: 2rem;
   margin-bottom: 1rem;
 }
@@ -2722,7 +2722,7 @@ section,
 }
 
 .contact .info-box a {
-  color: var(--contrast-color);
+  color: var(--default-color);
 }
 
 @media (max-width: 992px) {
@@ -2755,6 +2755,10 @@ section,
 
 .contact .info-item .icon-box i {
   font-size: 1.5rem;
+  color: var(--default-color);
+}
+
+.contact .info-item:hover .icon-box i {
   color: var(--contrast-color);
 }
 
@@ -2763,7 +2767,7 @@ section,
 }
 
 .contact .info-item .content h4 {
-  color: var(--contrast-color);
+  color: var(--default-color);
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -2830,7 +2834,7 @@ section,
 
 .contact .contact-form .btn {
   background-color: color-mix(in srgb, var(--surface-color), transparent 80%);
-  color: var(--contrast-color);
+  color: var(--default-color);
   padding: 1rem 2rem;
   border-radius: 2rem;
   display: inline-flex;
