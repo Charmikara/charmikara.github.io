@@ -1611,16 +1611,6 @@ section,
   min-width: 0;
 }
 
-.services .services-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: contain;
-  background-color: #000;
-  border-radius: 10px;
-}
-
 .services .service-content h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
