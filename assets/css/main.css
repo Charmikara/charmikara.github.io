@@ -2858,3 +2858,8 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+/* Simple services page layout */
+.services-page .services-content { max-width: 960px; }
+.services-content > section { padding: 0; margin-bottom: 2rem; }
+.services-content video { display: block; width: 100%; height: auto; }
+.services-content a { text-decoration: underline; }
